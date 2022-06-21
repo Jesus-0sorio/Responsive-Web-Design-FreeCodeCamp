@@ -1,0 +1,104 @@
+:root {
+    --bg: #9b48e6;
+    --btn: #1c1e25;
+    --btn-font: #fff;
+}
+
+body {
+    background: url("https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?cs=srgb&dl=pexels-christina-morillo-1181673.jpg&fm=jpg") no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+#survey-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--bg);
+    border-radius: 10px;
+    width: 550px;
+    padding: 50px;
+}
+
+#name, #email, #number{
+    max-width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0;
+}
+
+#dropdown {
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+}
+
+textarea {
+    max-width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    resize: none;
+}
+
+#submit {   
+    width: 100%;
+    height: 35px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 0;
+    padding: 0;
+    background: var(--btn);
+    color: var(--btn-font);
+}
+
+p {
+    margin: 25px 0 0;
+}
+
+#title {
+    margin: 25px 0 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#description {
+    align-self: center;
+    margin: 5px 0 15px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+#description {
+    font-size: 18px;
+}
+
+#email-label, #number-label {
+    margin: 25px 0 0;
+}
+
+@media (max-width: 670px) {
+    #survey-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 505px) {
+    #survey-form {
+        width: 70%;
+    }
+}
