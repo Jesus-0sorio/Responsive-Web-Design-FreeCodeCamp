@@ -1,0 +1,117 @@
+:root {
+    --code-bg: #242425;
+    --code-font: #8d28ec;
+    --gray: #58585c;
+    --black: #000;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}   
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 270px;
+    height: 100vh;
+    text-align: center;
+    background: var(--white);
+    border-right: 1px solid var(--gray);
+}
+
+#navbar header {
+    font-size: 28px;
+    padding: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    text-align: left;
+    padding-left: 20px;
+    margin: 14px;
+    font-size: 22px;
+    color: var(--black);
+}
+
+#main-doc {
+    position: absolute;
+    left: 310px;
+    width: 1000px;
+}
+
+#main-doc header {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 36px;
+}
+
+#main-doc section div p {
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+ol {
+    padding-left: 18px;
+    font-size: 20px;
+}
+
+#Introduction div ol p {
+    font-size: 18px;
+}
+
+ul li {
+    margin: 16px 0;
+}
+ul {
+    padding-left: 15px;
+    color: #000;
+    font-size: 18px;
+}
+
+#Introduction  code {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+}
+
+code {
+    background: var(--code-bg);
+    color: var(--code-font);
+    padding: 2px;
+    border-radius: 6px;
+}
+
+#Reference div ul li {
+    font-size: 20px;
+}
+
+li a {
+    text-decoration: none;
+}
+
+#Reference {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1330px) {
+    #main-doc {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1140px) {
+    #navbar {
+        width: 25%;
+    }
+}
+
+@media (max-width: 1060px) {
+    #main-doc {
+        width: 60%;
+        left: 30%;
+    }
+}
