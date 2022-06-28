@@ -1,0 +1,270 @@
+:root {
+    --bg: #8a2be2;
+    --bg-second: #bc69f0;
+    --black: #000;
+    --white: #fff;
+    --bg-nav: #08030d;
+    --bg-footer: #301a4e;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, var(--white), var(--bg-second), var(--bg)) no-repeat;
+}
+
+/* Decoracion header */
+
+header {
+    width: 100vw;
+    background: transparent var(--bg-nav);
+    height: 55px;
+    position: fixed;
+    margin: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#section-link {
+    margin: 0 50px;
+    font-size: 18px;
+    color: var(--black);
+}
+
+#navbar a {
+    transition: all 0.3s;
+}
+
+#navbar a:hover {
+    background: var(--bg-nav);
+    opacity: 0.8;
+    border-radius: 12px;
+    padding: 6px;
+    color: var(--white);
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+/* Decoracion de la section welcome */
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+}
+
+#subtitle {
+    font-size: 24px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+/* Decoracarion section projects */
+
+#projects {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+/* Decoracion de las tarjetas de los proyectos */
+
+#card-projects {
+    width: 70rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 330px));
+    grid-gap: 22px 45px;
+    justify-content: center;
+    align-items: center;
+} 
+
+#card-projects div {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+}
+
+
+#card-projects img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+#card-projects .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    transform: scale(1.2);
+    opacity: 0;
+    transition: all 0.3s;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 24px;
+}
+
+#card-projects .text:hover {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Decoracion de la section de contactos */
+
+#contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact h3 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 30px;
+    margin: 0 0 74px;
+    color: var(--white);
+    opacity: 0.78;
+}
+
+#contact #profile {
+    display: flex;
+    background: var(--white);
+    padding: 9px;
+    border-radius: 12px;
+}
+
+#contact #profile-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+}
+
+#contact img {
+    width: 30px;
+    margin: 0 12px;
+}
+
+#contact a {
+    text-align: center;
+    margin: 0;
+    transition: all 0.3s;
+}
+
+#contact a:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+/* Decoracion del footer */
+
+footer {
+    width: 100%;
+    background: var(--bg-footer);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+    #card-projects {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1100px) {
+    h1 {
+        font-size: 40px;
+    }
+    #subtitle {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    #contact h3 {
+        font-size: 32px;
+    }
+    #contact p {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 430px) {
+    h1 {
+        font-size: 36px;
+    }
+    #subtitle {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    #contact h3 {
+        font-size: 24px;
+    }
+    #contact p {
+        font-size: 20px;
+    }
+
+    #contact #profile-link {
+        width: 80%;
+    }
+
+    #section-link {
+        margin: auto;
+    }
+    
+    #card-projects {
+        grid-template-columns: repeat(auto-fill, minmax(40px, 270px));
+    }
+}
