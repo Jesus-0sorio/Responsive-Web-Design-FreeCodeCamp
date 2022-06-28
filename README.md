@@ -2,21 +2,22 @@
 
 <h3>Project Tribute Page</h3>
 <p align="center">
-<img src="https://user-images.githubusercontent.com/67567509/174915016-9a80d2be-fd75-4e61-99ce-6a69a484338a.png" width="50%" />
+<img src="https://user-images.githubusercontent.com/67567509/176097713-1ad81f2d-e97a-4b32-87f2-af1d5ee18d1b.png" width="50%" />
+
 </p>
 
 
 <h3>Project Application Form</h3>
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/67567509/174914816-c755539d-c795-42df-8494-e4aa9c27962c.png" width="50%" />
+    <img src="https://user-images.githubusercontent.com/67567509/176098137-b140de7b-c9cc-4500-bd2f-fd0259a95518.png" width="50%" />
 </p>
 
 <h3>Project product page</h3>
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/67567509/175790366-72d56049-6c30-4cf9-90d4-1e733ca1524a.png" width="50%" />
+    <img src="https://user-images.githubusercontent.com/67567509/176097567-4905f8d6-7b28-49d4-bf28-b0d1e473730f.png" width="50%" />
 </p>
 
 <h3>Project technical documentation page</h3>
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/67567509/175790416-d1be775a-ae0c-410e-b07f-644bcd5b1d07.png" width="50%" />
+    <img src="https://user-images.githubusercontent.com/67567509/176098257-a4797c29-7461-4e02-9e4f-54ed3fe5316c.png" width="50%" />
 </p>
